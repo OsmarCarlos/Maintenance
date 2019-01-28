@@ -39,7 +39,7 @@
 
   .hero {
     position: relative;
-    padding: 170px 0 100px;
+    padding: 100px 0 100px;
     background-repeat: no-repeat;
   }
 
@@ -73,9 +73,38 @@
     color: white;
   }
 
+  img {
+    position: relative;
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 1023px){
+    h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 0;
+    color: white !important;
+    z-index: 2;
+    font-size: 1.4em;
+    margin: 10px 10px;
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    height: 50%
+  }
+
+}
+
+
 </style>
 <body>
   <div class="hero" id="photos">
+    <!-- <figure>
+      <img src="https://s3-us-west-1.amazonaws.com/capptu/Pikachu.jpg" height="300px" alt="">
+    </figure> -->
     <h1 class="title"> ¡Disculpa las molestias!</h1>
     <h2 class="title"> Estamos trabajando en nuestros servidores para brindarte una mejor experiencia.</h2>
     <h2 class="title"> Pronto restableceremos el sevicio.</h2>
